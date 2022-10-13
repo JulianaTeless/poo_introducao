@@ -4,12 +4,12 @@ public class Carro {
     private String cor;
     private String placa;
 
-    public void multa(){
-        JOptionPane.showMessageDialog(null,"Aplicando multa no carro de placa: %s", getPlaca(), 0);
+    public void repassarCor(){
+        JOptionPane.showMessageDialog(null,"Aplicando cor:  " + getCor(),"Repintando..",JOptionPane.WARNING_MESSAGE);
     }
 
-    public void repassarCor(){
-        JOptionPane.showMessageDialog(null,"Aplicando multa no carro de placa: %s", getCor(), 0);
+    public void multa(){
+        JOptionPane.showMessageDialog(null,"Aplicando multa no carro de placa: " + getPlaca(), "Multa",JOptionPane.WARNING_MESSAGE);
     }
 
     public String getCor() {
